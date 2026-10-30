@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bcd7f1;
+    color: #333;
+    line-height: 1.6;
+   
+   
+}
+
+.medical-categories {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h2 {
+    font-size: 2.5rem;
+    color: #020556;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d148ba;
+}
+
+.highlight {
+    color: #0080ff;
+    font-weight: bold;
+}
+
+.category-nav {
+    margin-bottom: 40px;
+}
+
+.category-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #0066cc;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.category-nav a:hover {
+    background-color: #004d99;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.category h3 {
+    color: #021930;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.category li:last-child {
+    border-bottom: none;
+}
+
+.category li::before {
+    content: "✔";
+    color: #008000;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.sidebar h3 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+.sidebar p {
+    color: #555;
+    margin-top: 15px;
+}
+
+.seo-keyword {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.categories-footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 25px;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.95rem;
+}
+  
